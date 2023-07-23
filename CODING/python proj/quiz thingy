@@ -1,0 +1,40 @@
+print ("welcome to the quiz")
+
+playing = input("do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("legooo!")
+score = 0
+
+answer = input("what does cpu stant for? ")
+if answer.lower() == "central processing unit":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+
+answer = input("what does gpu stant for? ")
+if answer.lower() == "graphic processing unit":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+
+answer = input("what does ram stant for? ")
+if answer.lower() == "random access memory":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+
+answer = input("what does rom stant for? ")
+if answer.lower() == "read only memory":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+
+print("you're score is " + str(score))
+print("precentage is " + str(score/4*100) + "%." )
